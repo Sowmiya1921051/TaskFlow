@@ -101,6 +101,12 @@ Backend tests cover:
 | GitHub | Source code hosting |
 | VS Code | Development environment |
 
+
+## Project Resources
+
+- **GitHub Repository:** [TaskFlow Board](https://github.com/Sowmiya1921051/TaskFlow)
+- **Google Drive:** [View Project Files / Demo](YOUR_GOOGLE_DRIVE_LINK)
+
 ---
 
 # Architecture
@@ -127,3 +133,6 @@ The application follows a simple client-server architecture:
 │                             │
 │   Boards → Columns → Tasks  │
 └─────────────────────────────┘
+
+
+
