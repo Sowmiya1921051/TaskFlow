@@ -8,18 +8,25 @@ const Column = ({
   onMove,
 }) => {
   return (
-    <div className="column">
-      <div className="column-header">
-        <h2>{column.name}</h2>
+    <div className="flex min-h-[500px] flex-col rounded-2xl border border-slate-200 bg-slate-100 p-4">
+      
+      {/* Column header */}
+      <div className="mb-4 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <h2 className="font-semibold text-slate-800">
+            {column.name}
+          </h2>
 
-        <span className="task-count">
-          {column.tasks.length}
-        </span>
+          <span className="rounded-full bg-white px-2.5 py-1 text-xs font-semibold text-slate-500 shadow-sm">
+            {column.tasks.length}
+          </span>
+        </div>
       </div>
 
-      <div className="tasks">
+      {/* Tasks */}
+      <div className="flex-1">
         {column.tasks.length === 0 ? (
-          <div className="empty-column">
+          <div className="rounded-xl border border-dashed border-slate-300 bg-white/50 p-8 text-center text-sm text-slate-400">
             No tasks
           </div>
         ) : (
